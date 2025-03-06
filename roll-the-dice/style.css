@@ -1,0 +1,79 @@
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Dice container */
+.dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;  /* Increased gap between dice */
+    margin: 50px 0;
+}
+
+/* Dice styling (Fix Emoji Size) */
+#dice1, #dice2 {
+    width: 180px;    /* Increased size */
+    height: 180px;   /* Increased size */
+    font-size: 120px; /* Increased emoji size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 20px 50px;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffdb4d;
+}
+
+/* Message Styling */
+.hidden {
+    display: none;
+}
+
+#statusMsg {  
+    margin-top: 25px;
+    font-size: 24px;
+    color: #ffcc00;
+    font-weight: bold;
+}
